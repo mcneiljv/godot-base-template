@@ -1,6 +1,8 @@
+class_name Player
 extends Area2D
 
-@export var player_speed: int = 400
+@export var walk_speed: int = 300
+@export var sprint_speed: int = 600
 var screen_size
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
@@ -9,9 +11,6 @@ var screen_size
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
-	print("screen_size", screen_size)
-	# spawns the player in the center of the screen
-	position = screen_size / 2
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -26,11 +25,18 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1
 
-	if velocity.length() > 0:
-		velocity = velocity.normalized() * player_speed
+	# the player is moving
+	if velocity != Vector2.ZERO:
+		var speed: int = sprint_speed if Input.is_action_pressed("sprint") else walk_speed
+		velocity = velocity.normalized() * speed
 		sprite.play()
 	else:
 		sprite.stop()
 
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+
+	if velocity.x < 0:
+		sprite.flip_h = true
+	else:
+		sprite.flip_h = false
