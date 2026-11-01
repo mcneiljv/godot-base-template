@@ -11,6 +11,7 @@ A reusable starting point for new Godot projects.
 ## What's Included
 
 - Player movement with walk and sprint
+- Level swapping
 - Sprite animation that plays while moving and stops when idle
 - GDScript linting and formatting via [GDToolkit](https://github.com/Scony/godot-gdscript-toolkit), with a pre-commit hook and a GitHub Actions check on every PR
 
