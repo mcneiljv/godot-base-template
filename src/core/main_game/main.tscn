@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://dit32yg2dnkou"]
 
-[ext_resource type="PackedScene" uid="uid://cnih6qr78gvty" path="res://scenes/debug.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://cnih6qr78gvty" path="res://src/debug/debug_overlay.tscn" id="1_l4v7s"]
+[ext_resource type="PackedScene" uid="uid://c6257x7v2bcq8" path="res://src/gameplay/player/player.tscn" id="2_8jwtq"]
 
 [node name="MainGame" type="Node2D" unique_id=538287684]
 
+[node name="Player" parent="." unique_id=732587848 instance=ExtResource("2_8jwtq")]
+
 [node name="MainCanvas" type="CanvasLayer" parent="." unique_id=2084581224]
+layer = -1
 
 [node name="ColorRect" type="ColorRect" parent="MainCanvas" unique_id=1584238161]
 anchors_preset = 15
@@ -12,11 +16,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 0.3647059, 1, 1)
+color = Color(0.27204677, 0.2720468, 0.2720468, 1)
 
 [node name="DebugLayer" type="CanvasLayer" parent="." unique_id=428591197]
 
-[node name="DebugTextOverlay" parent="DebugLayer" unique_id=361554405 instance=ExtResource("1_o5qli")]
+[node name="DebugTextOverlay" parent="DebugLayer" unique_id=361554405 instance=ExtResource("1_l4v7s")]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0

@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cnih6qr78gvty"]
 
-[ext_resource type="Script" uid="uid://bowsuv2jmkr14" path="res://scripts/debug_overlay.gd" id="1_lgrwq"]
+[ext_resource type="Script" uid="uid://bowsuv2jmkr14" path="res://src/debug/debug_overlay.gd" id="1_eudbk"]
 
 [node name="DebugTextOverlay" type="Control" unique_id=361554405]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_lgrwq")
+script = ExtResource("1_eudbk")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1879910894]
 layout_mode = 0

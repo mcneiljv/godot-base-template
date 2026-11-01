@@ -10,5 +10,5 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install "gdtoolkit==4.*"
-      - run: gdformat --check scripts/
-      - run: gdlint scripts/
+      - run: gdformat --check src/
+      - run: gdlint src/
