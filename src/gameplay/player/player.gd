@@ -11,8 +11,6 @@ var screen_size
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
-	# spawns the player in the center of the screen
-	position = screen_size / 2
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
