@@ -1,6 +1,7 @@
+class_name Player
 extends Area2D
 
-@export var walk_speed: int = 400
+@export var walk_speed: int = 300
 @export var sprint_speed: int = 600
 var screen_size
 
