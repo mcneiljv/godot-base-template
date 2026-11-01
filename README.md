@@ -1,4 +1,5 @@
-# Godot Base Template
+# Godot Base Template <img src="https://godotengine.org/assets/press/icon_color.png" alt="Godot logo" width="30"/>
+
 
 A reusable starting point for new Godot projects.
 
