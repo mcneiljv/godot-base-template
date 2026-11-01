@@ -7,16 +7,16 @@
 
 [node name="Player" parent="." unique_id=732587848 instance=ExtResource("2_8jwtq")]
 
-[node name="MainCanvas" type="CanvasLayer" parent="." unique_id=2084581224]
+[node name="Background" type="CanvasLayer" parent="." unique_id=2084581224]
 layer = -1
 
-[node name="ColorRect" type="ColorRect" parent="MainCanvas" unique_id=1584238161]
+[node name="ColorRect" type="ColorRect" parent="Background" unique_id=1584238161]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.27204677, 0.2720468, 0.2720468, 1)
+color = Color(0.5719552, 0.6333144, 0.9959449, 1)
 
 [node name="DebugLayer" type="CanvasLayer" parent="." unique_id=428591197]
 

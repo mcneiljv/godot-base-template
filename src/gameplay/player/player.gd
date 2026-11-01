@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1
 
+	# if the player is moving
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * player_speed
 		sprite.play()
@@ -34,3 +35,8 @@ func _process(delta: float) -> void:
 
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
+
+	if velocity.x < 0:
+		sprite.flip_h = true
+	else:
+		sprite.flip_h = false
