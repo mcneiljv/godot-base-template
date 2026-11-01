@@ -14,13 +14,11 @@ config/name="Space Rock Tea Cafe"
 config/version="0.1.0"
 run/main_scene="uid://dit32yg2dnkou"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/size/always_on_top=true
 window/size/window_width_override=2000
 window/size/window_height_override=1200
 window/stretch/mode="canvas_items"
