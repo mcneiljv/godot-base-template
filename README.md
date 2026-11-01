@@ -31,7 +31,7 @@ These actions need to exist in **Project > Project Settings > Input Map**:
 
 Set in the Inspector on the player node:
 
-- `walk_speed` (default 400)
+- `walk_speed` (default 300)
 - `sprint_speed` (default 600)
 
 ## Starting a New Project
